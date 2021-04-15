@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 16:41+0200\n"
+"POT-Creation-Date: 2021-04-15 17:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,65 +19,81 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: models.py:8
+#: items/apps.py:5 items/models.py:45
+msgid "items"
+msgstr "položky"
+
+#: items/models.py:7
 msgid "name of category"
 msgstr "název kategorie"
 
-#: models.py:9
+#: items/models.py:8 items/models.py:18 items/models.py:34
 msgid "description"
 msgstr "popis"
 
-#: models.py:12
+#: items/models.py:11
 msgid "category"
 msgstr "kategorie"
 
-#: models.py:13 models.py:28
+#: items/models.py:12 items/models.py:39
 msgid "categories"
 msgstr "kategorie"
 
-#: models.py:20
+#: items/models.py:17
+msgid "name of supplier"
+msgstr "název dodavatele"
+
+#: items/models.py:19
+msgid "url"
+msgstr "url"
+
+#: items/models.py:22 items/models.py:36
+msgid "supplier"
+msgstr "dodavatel"
+
+#: items/models.py:23
+msgid "suppliers"
+msgstr "dodavatelé"
+
+#: items/models.py:29
 msgid "metres"
 msgstr "metry"
 
-#: models.py:21
+#: items/models.py:30
 msgid "pieces"
 msgstr "kusy"
 
-#: models.py:22
+#: items/models.py:31
 msgid "centimetres"
 msgstr "centimetry"
 
-#: models.py:24
+#: items/models.py:33
 msgid "name"
 msgstr "název"
 
-#: models.py:25
+#: items/models.py:35
 msgid "count"
 msgstr "počet"
 
-#: models.py:26
+#: items/models.py:37
 msgid "unit"
 msgstr "jednotka"
 
-#: models.py:27
+#: items/models.py:38
 msgid "price per unit"
 msgstr "cena za jednotku"
 
-#: models.py:29
+#: items/models.py:40
 msgid "date created"
 msgstr "Datum vytvoření"
 
-#: models.py:30
+#: items/models.py:41
 msgid "date changed"
 msgstr "Datum změny"
 
-#: models.py:33
+#: items/models.py:44
 msgid "item"
 msgstr "položka"
-
-#: models.py:34
-msgid "items"
-msgstr "položky"
 
 #, fuzzy
 #~| msgid "categories"
