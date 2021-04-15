@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 17:30+0200\n"
+"POT-Creation-Date: 2021-04-15 17:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: items/apps.py:5 items/models.py:45
+#: items/apps.py:6 items/models.py:57
 msgid "items"
 msgstr "položky"
 
@@ -27,71 +27,83 @@ msgstr "položky"
 msgid "name of category"
 msgstr "název kategorie"
 
-#: items/models.py:8 items/models.py:18 items/models.py:34
+#: items/models.py:8 items/models.py:18 items/models.py:29 items/models.py:45
 msgid "description"
 msgstr "popis"
 
-#: items/models.py:11
+#: items/models.py:11 items/models.py:19
 msgid "category"
 msgstr "kategorie"
 
-#: items/models.py:12 items/models.py:39
+#: items/models.py:12 items/models.py:50
 msgid "categories"
 msgstr "kategorie"
 
 #: items/models.py:17
+msgid "name of subcategory"
+msgstr "název subkategorie"
+
+#: items/models.py:22
+msgid "subcategory"
+msgstr "subkategorie"
+
+#: items/models.py:23 items/models.py:51
+msgid "subcategories"
+msgstr "subkategorie"
+
+#: items/models.py:28
 msgid "name of supplier"
 msgstr "název dodavatele"
 
-#: items/models.py:19
+#: items/models.py:30
 msgid "url"
 msgstr "url"
 
-#: items/models.py:22 items/models.py:36
+#: items/models.py:33 items/models.py:47
 msgid "supplier"
 msgstr "dodavatel"
 
-#: items/models.py:23
+#: items/models.py:34
 msgid "suppliers"
 msgstr "dodavatelé"
 
-#: items/models.py:29
+#: items/models.py:40
 msgid "metres"
 msgstr "metry"
 
-#: items/models.py:30
+#: items/models.py:41
 msgid "pieces"
 msgstr "kusy"
 
-#: items/models.py:31
+#: items/models.py:42
 msgid "centimetres"
 msgstr "centimetry"
 
-#: items/models.py:33
+#: items/models.py:44
 msgid "name"
 msgstr "název"
 
-#: items/models.py:35
+#: items/models.py:46
 msgid "count"
 msgstr "počet"
 
-#: items/models.py:37
+#: items/models.py:48
 msgid "unit"
 msgstr "jednotka"
 
-#: items/models.py:38
+#: items/models.py:49
 msgid "price per unit"
 msgstr "cena za jednotku"
 
-#: items/models.py:40
+#: items/models.py:52
 msgid "date created"
 msgstr "Datum vytvoření"
 
-#: items/models.py:41
+#: items/models.py:53
 msgid "date changed"
 msgstr "Datum změny"
 
-#: items/models.py:44
+#: items/models.py:56
 msgid "item"
 msgstr "položka"
 
