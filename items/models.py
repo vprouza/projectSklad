@@ -57,9 +57,3 @@ class Item(models.Model):
         verbose_name_plural = _("items")
     def __str__(self):
         return self.name
-
-class ItemAdmin(admin.ModelAdmin):
-    list_display = ('name', 'count', 'supplier', 'price', 'date_modified')
-    search_fields = ['name', 'description']
-    list_filter = ('supplier','category', 'subcategory')
-    filter_horizontal = ('subcategory',)
