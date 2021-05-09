@@ -9,11 +9,13 @@ class ItemListView(ListView):
     model = Item
     template_name = 'transactions/items_list.html'
 
-#@login_required
+@login_required
 def index(request):
     output = _("Hello world")
     if request.user.is_authenticated:
-        output = "logged in asi user"
+        username = request.user.get_full_name()
+        #print(request.user)
+        output = "logged in as: " + username
     else:
         output = "not logged in"
     return HttpResponse(output)
