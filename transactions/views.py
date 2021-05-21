@@ -6,6 +6,7 @@ from django.views.generic import ListView
 from items.models import Item
 from django.contrib.auth.models import User
 
+
 class ItemListView(ListView):
     model = Item
     template_name = 'transactions/items_list.html'
@@ -19,4 +20,5 @@ def index(request):
         output = "logged in as: " + username + "\n" + str(request.user.seller.order_in_progress)
     else:
         output = "not logged in"
-    return HttpResponse(output)
+    #return HttpResponse(output)
+    return render(request, 'base.html')
