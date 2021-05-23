@@ -21,4 +21,4 @@ def index(request):
     else:
         output = "not logged in"
     #return HttpResponse(output)
-    return render(request, 'base.html')
+    return render(request, 'content.html')
