@@ -19,50 +19,15 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: transactions/models.py:10
-msgid "order id"
-msgstr ""
+#: accounts/templates/registration/login.html:15
+#: accounts/templates/registration/login.html:24
+msgid "Sign in"
+msgstr "Přihlásit se"
 
-#: transactions/models.py:11
-msgid "date created"
-msgstr ""
+#: accounts/templates/registration/login.html:31
+msgid "Username"
+msgstr "Uživatel"
 
-#: transactions/models.py:12
-msgid "discount"
-msgstr ""
-
-#: transactions/models.py:13
-msgid "total price"
-msgstr ""
-
-#: transactions/models.py:22
-msgid "item"
-msgstr ""
-
-#: transactions/models.py:23
-msgid "amount"
-msgstr ""
-
-#: transactions/models.py:24
-msgid "price per unit"
-msgstr ""
-
-#: transactions/models.py:26
-msgid "reserved"
-msgstr ""
-
-#: transactions/models.py:27
-msgid "finished"
-msgstr ""
-
-#: transactions/models.py:29
-msgid "status"
-msgstr ""
-
-#: transactions/models.py:30
-msgid "order"
-msgstr ""
-
-#: transactions/views.py:16
-msgid "Hello world"
-msgstr "Ahoj světe"
+#: accounts/templates/registration/login.html:35
+msgid "Password"
+msgstr "Heslo"

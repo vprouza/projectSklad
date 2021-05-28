@@ -11,13 +11,15 @@ class ItemListView(ListView):
     model = Item
     template_name = 'transactions/items_list.html'
 
+
 @login_required
 def index(request):
     output = _("Hello world")
     if request.user.is_authenticated:
         username = request.user.get_full_name()
         #print(request.user)
-        output = "logged in as: " + username + "\n" + str(request.user.seller.order_in_progress)
+        output = "logged in as: " + username + "\n" + str(
+            request.user.seller.order_in_progress)
     else:
         output = "not logged in"
     #return HttpResponse(output)
@@ -27,15 +29,17 @@ def index(request):
 def list(request):
     result = Item.objects.all()
     site = "Search result"
-    context = {'result': result,
-    'title' : site}
+    context = {'result': result, 'title': site}
     return render(request, "content.html", context)
 
 
 def search(request):
-    str = request.GET.get("search",default="")
-    result = Item.objects.filter(name__contains=str)
+    query = request.GET.get("search", default="")
+    result = Item.objects.filter(name__contains=query)
     site = "Search result"
-    context = {'result': result,
-    'title' : site}
+    context = {
+        'result': result,
+        'title': site,
+        'query': query,
+    }
     return render(request, "search.html", context)

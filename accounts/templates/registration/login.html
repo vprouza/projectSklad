@@ -9,10 +9,10 @@
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
     {% load static %}
-
+    {% load i18n %}
     <link rel="stylesheet" href="{% static 'signin.css' %}">
 
-    <title>Login</title>
+    <title>{% translate "Sign in" %}</title>
 </head>
 
 <body class="text-center">
@@ -21,18 +21,18 @@
             <!---
                 <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
             -->
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <h1 class="h3 mb-3 fw-normal">{% translate "Sign in" %}</h1>
             {% csrf_token %}
             {% if form.errors %}
             <p>Your username and password didn't match. Please try again.</p>
             {% endif %}
             <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="{{ form.username.name }}">
-                <label for="floatingInput">Email address</label>
+                <input type="text" class="form-control" id="floatingInput" placeholder="honza" name="{{ form.username.name }}">
+                <label for="floatingInput">{% translate "Username" %}</label>
               </div>
               <div class="form-floating">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="{{ form.password.name }}">
-                <label for="floatingPassword">Password</label>
+                <label for="floatingPassword">{% translate "Password" %}</label>
               </div>
 
             <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
